@@ -236,7 +236,7 @@ predict_image = model.predict(image.select(['VV']))
 | 数据抽象     |  Image, ImageCollection, Feature and FeatureCollection  |     Image, ImageCollection, Feature and FeatureCollection | STAC item & item collection |Product & Dataset |Collection & Granule |
 | 处理抽象 |  Predefined pixel-wise functions  | Predefined pixel-wise functions | Xarray & Dask | Xarray & celery |User-defined functions, process, graphs & jobs |
 | 物理抽象   |  storage & process  |   storage & process | storage & process |storage only |storage & process |
-| 科学可重复性 |  中 (data & scripts links)  | 中 (data name & scripts) | 中 (data links & scripts) |低 |低 |
+| 科学可重复性 |  medium (data & scripts links)  | medium (data name & scripts) | medium (data links & scripts) |low |low |
 | 处理规模化 | 高(自动并行)  | 高（自动并行） | 中（dask tutorial） |中 (Celery) | -|
 | 可扩展性 |  低（专有封闭软件） | 低（专有封闭软件） | 高（开源） |高（开源） |中（开源+专有软件） |
 | 计算收费 |  科研免费，商业收费 | 科研免费，AI按时长 |  Hub计算收费 | - | - |
